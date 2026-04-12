@@ -1,0 +1,10 @@
+
+  METHODS find_passenger_flight
+      IMPORTING
+        i_airport_from_id TYPE /dmo/airport_from_id
+        i_airport_to_id   TYPE /dmo/airport_to_id
+        i_from_date       TYPE /dmo/flight_date
+        i_seats           TYPE i
+      EXPORTING
+        e_flight          TYPE REF TO lcl_flight
+        e_days_later      TYPE i.
